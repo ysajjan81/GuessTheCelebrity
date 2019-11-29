@@ -1,40 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbarSize="50dp"
+        android:src="@color/colorPrimaryDark"
+        android:layout_gravity="fill"
+        android:layout_row="0"
+        android:layout_column="0"
         android:id="@+id/picBox">
     </ImageView>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/option1"
-        android:text="Option1">
+        android:layout_row="1"
+        android:layout_column="0"
+        android:text=""
+        android:tag="0">
     </Button>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_row="2"
+        android:layout_column="0"
         android:id="@+id/option2"
-        android:text="Option2">
+        android:text="Option2"
+        android:tag="1">
     </Button>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/option3"
-        android:text="Option3">
+        android:layout_row="3"
+        android:layout_column="0"
+        android:text=""
+        android:tag="2">
     </Button>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/option4"
-        android:text="Option4">
+        android:layout_row="4"
+        android:layout_column="0"
+        android:text=""
+        android:tag="3">
     </Button>
-</LinearLayout>
+    </GridLayout>
+</RelativeLayout>
